@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Piškvorky</title>
+</head>
+
+<body>
+    <div class="layout">
+        <section>
+            <h1>
+                Piškvorky
+            </h1>
+
+            <div class="buttonGroup">
+                <div id="score"> </div>
+
+                <button id="previousGameButton">
+                    Skóre z předchozích her
+                </button>
+
+                <button id="saveScoreButton" hidden>
+                    Uložit aktuální skóre
+                </button>
+
+                <button id="restartButton" hidden>
+                    Restartovat hru
+                </button>
+
+                <button id="resetPlayersButton" hidden>
+                    Noví hráči
+                </button>
+
+                <button id="newGameButton">
+                    Nová hra
+                </button>
+            </div>
+
+            <div id="actualPlayer" hidden></div>
+        </section>
+        <div id="gameArea"> </div>
+    </div>
+
+    <div id="chooseGame"> </div>
+    <div id="previousGameView"> </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="player.js"></script>
+    <script src="gameMode.js"></script>
+    <script src="gameStatistic.js"></script>
+    <script src="game.js"></script>
+    <script src="service.js"></script>
+</body>
+
+</html>
