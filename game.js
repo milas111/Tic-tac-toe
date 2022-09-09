@@ -96,7 +96,7 @@ class Game {
     }
 
     refreshGameInfo() {
-        this.scoreInfo.innerHTML = `<span class="${this.players[0].color}">${this.players[0].symbol}</span> ${this.player1.score}:${this.player2.score} <span class="${this.players[1].color}">${this.players[1].symbol}</span><br>${this.players[0].name} VS ${this.players[1].name}`;
+        this.scoreInfo.innerHTML = `${this.players[0].name} VS ${this.players[1].name}<br><span class="${this.players[0].color}">${this.players[0].symbol}</span> ${this.player1.score}:${this.player2.score} <span class="${this.players[1].color}">${this.players[1].symbol}</span>`;
     }
 
     inicializePlayers(player1, player2) {
